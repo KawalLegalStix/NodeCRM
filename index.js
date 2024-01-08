@@ -18,7 +18,11 @@ app.use(bodyParser.json());
 app.use('/auth', authRoutes);
 app.use('/lead', leadRoutes);
 
-const PORT = process.env.PORT || 4000;
+app.get('/', (req, res) => {
+  res.send('Node.js Setup Success!')
+});
+
+const PORT = process.env.PORT || 3306;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 }); 

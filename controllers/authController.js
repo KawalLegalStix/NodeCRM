@@ -4,10 +4,8 @@ const tokenUtils = require('../utils/token');
 
 const login = (req, res) => {
   const { username, password } = req.body;
-
   User.loginUser(req.body, (err, user) => {
     if (err) throw err;
-
     if (!user) {
       res.status(404).json({ success: false, message: 'User not found' });
     } else {
