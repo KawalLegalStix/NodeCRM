@@ -11,9 +11,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "node index.js"
+    "build": "node index.js",
+    "test": "node index.js",
+    "eject": "node index.js"
   },
   "keywords": [],
   "author": "",
